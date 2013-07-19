@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>523</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="2" column="1" colspan="5">
+     <widget class="QComboBox" name="cb_Project">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLabel" name="label_sqKey">
+      <property name="text">
+       <string>Sequence KEY:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1" colspan="4">
+     <widget class="QLineEdit" name="le_epiKey">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="0">
+     <widget class="QLabel" name="label_FPS">
+      <property name="text">
+       <string>FPS:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="18" column="0" colspan="6">
+     <widget class="QPushButton" name="pb_preview">
+      <property name="text">
+       <string>Preview</string>
+      </property>
+     </widget>
+    </item>
+    <item row="23" column="0" colspan="6">
+     <widget class="QPlainTextEdit" name="te_log">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="1" colspan="5">
+     <widget class="QLineEdit" name="le_pathQT"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_shotgunServer">
+      <property name="text">
+       <string>Shotgun Server:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="5">
+     <widget class="QComboBox" name="cb_shotgunServer">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <item>
+       <property name="text">
+        <string>-Select Shotgun Server-</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>The Duck</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="label_project">
+      <property name="text">
+       <string>Project:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="label_episode">
+      <property name="text">
+       <string>Episode:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="0">
+     <widget class="QPushButton" name="pb_loadEDL">
+      <property name="text">
+       <string>EDL</string>
+      </property>
+     </widget>
+    </item>
+    <item row="16" column="0">
+     <widget class="QPushButton" name="pb_loadQT">
+      <property name="text">
+       <string>QT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="20" column="0">
+     <widget class="QLabel" name="label_seqShots">
+      <property name="text">
+       <string>Sequences/Shots</string>
+      </property>
+     </widget>
+    </item>
+    <item row="21" column="0" colspan="6">
+     <widget class="QTableWidget" name="tw_sqsh">
+      <property name="verticalScrollBarPolicy">
+       <enum>Qt::ScrollBarAsNeeded</enum>
+      </property>
+      <property name="horizontalScrollBarPolicy">
+       <enum>Qt::ScrollBarAlwaysOff</enum>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>80</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>80</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>shot</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EpiStart</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>EpiEnd</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SeqStart</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>SeqEnd</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>dur</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="22" column="0">
+     <widget class="QLabel" name="label_log">
+      <property name="text">
+       <string>Log:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1" colspan="5">
+     <widget class="QComboBox" name="cb_Episode">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="15" column="1" colspan="5">
+     <widget class="QLineEdit" name="le_pathEDL"/>
+    </item>
+    <item row="19" column="0" colspan="6">
+     <widget class="QPushButton" name="pb_create">
+      <property name="text">
+       <string>Create</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QLineEdit" name="le_seqPreview">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLabel" name="label_epiKey">
+      <property name="text">
+       <string>Episode KEY:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="11" column="1" colspan="5">
+     <widget class="QLineEdit" name="le_FPS">
+      <property name="text">
+       <string>25</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1" colspan="4">
+     <widget class="QLineEdit" name="le_shKey">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>s####</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QLabel" name="label_shKey">
+      <property name="text">
+       <string>Shot KEY:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5">
+     <widget class="QLineEdit" name="le_shotPreview">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1" colspan="5">
+     <widget class="QLineEdit" name="le_preview">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QLineEdit" name="le_epiPreview">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLabel" name="label">
+      <property name="text">
+       <string>preview:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="0">
+     <widget class="QLabel" name="label_tcOffset">
+      <property name="text">
+       <string>TC Offset:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="17" column="1" colspan="5">
+     <widget class="QLineEdit" name="le_tcOffset">
+      <property name="text">
+       <string>00:00:00:00</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1" colspan="4">
+     <widget class="QLineEdit" name="le_sqKey">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>q####</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>523</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,2 @@
+import os, shutil
+os.system( '"/usr/local/rv-Linux-x86-64-3.12.20/bin/rvio" -vv [ /dsComp/Lego_ChimaFillers/film/06_CrocodileEvolution_011179/q0010/s0010/comp/compOut/v021/CrocodileEvolution_q0010_s0010_comp.91-155#.dpx -uncrop 1920 1080 0 50 ] -overlay frameburn 1 1 40 -codec x264 -quality 0.75 -o /dsComp/Lego_ChimaFillers/film/06_CrocodileEvolution_011179/q0010/s0010/published2D/compOut/QT/CrocodileEvolution_q0010_s0010_comp.mov')

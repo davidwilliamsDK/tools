@@ -1,0 +1,39 @@
+<RR_Job_File syntax_version="6.0">
+
+<Job>
+    <SceneName>     \\xserv2.duckling.dk\dsComp\Lego_ChimaFillers\film\06_CrocodileEvolution_011179\q0010\s0030\comp\compOut\v016\CrocodileEvolution_q0010_s0030_comp.0324.dpx     </SceneName>
+    <SceneFolder>	\\xserv2.duckling.dk\dsComp\Lego_ChimaFillers\film\06_CrocodileEvolution_011179\q0010\s0030\comp\compOut\v016	</SceneFolder>
+    <Software>     Duck     </Software>
+    <Version>     1.0     </Version>
+    <Tiled>     false     </Tiled>
+    <RequiredPlugins>     ;Publish     </RequiredPlugins>
+    <ImageFilename>     duckPublish.file     </ImageFilename>
+    <ImageFileNameVariables>     06_CrocodileEvolution_011179_q0010_s0030_comp.mov     </ImageFileNameVariables>
+    <ImageDir>     \\xserv2.duckling.dk\dsComp\Lego_ChimaFillers\film\06_CrocodileEvolution_011179\q0010\s0030\published2D\compOut\QT\     </ImageDir>
+   	<CustomA>	\\xserv2.duckling.dk\dsComp\Lego_ChimaFillers\film\06_CrocodileEvolution_011179\q0010\s0030\published2D\compOut\DPX\		</CustomA>
+   	<CustomB> 06_CrocodileEvolution_011179_q0010_s0030_comp.mov</CustomB>
+   	<CustomC> CrocodileEvolution_q0010_s0030_comp.324-426#.dpx</CustomeC>
+    <ImageFramePadding>     1     </ImageFramePadding>
+    <ImageSingleOutputFile>     true     </ImageSingleOutputFile>
+    <SceneOS>     linux     </SceneOS>
+    <OS_Path_Format>     linux     </OS_Path_Format>
+    <PreID>     0     </PreID>
+    <UserName>     Publish2d     </UserName>
+    <CompanyProjectName>     Lego_ChimaFillers     </CompanyProjectName>
+    <Color>     2     </Color>
+    <Priority>     50     </Priority>
+    <verboseLevel>     4     </verboseLevel>
+    <PrePostCommand>     PPUpdateShotgun=1~1   </PrePostCommand>
+    <PrePostCommand>     PPUpdateShotgun=1 ~ 1 ~ 0 ~ 0 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPAssembleTiles ~ 100 ~ 100 ~ 1 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPSequenceCheck ~ 100 ~ 100 ~ 1 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPEXRCropchannels ~ 100 ~ 100 ~ 1 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPUpdateShotgun ~ 100 ~ 100 ~ 2 ~ 1   </PrePostCommand>
+    <PrePostCommand>     PPCreateWebVideo ~ 100 ~ 100 ~ 1 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPJob-MakeVideo-proreshq ~ 100 ~ 100 ~ 1 ~ 0   </PrePostCommand>
+    <PrePostCommand>     PPDeletebroken ~ 100 ~ 100 ~ 2 ~ 0   </PrePostCommand>
+<!--  Clients can be assigned by a list of booleans or by group name -->
+    <Clients>     RVIO     </Clients>
+</Job>
+
+</RR_Job_File>

@@ -1,0 +1,12 @@
+<episode>
+	<item type="folder" name="comments"/>
+	<item type="folder" name="dailes"/>
+	<item type="folder" name="edit">
+		<item type="folder" name="2DAnimatic"/>
+		<item type="folder" name="audio"/>
+		<item type="folder" name="EDL">
+			<item type="folder" name="incrementalSave"/>
+		</item>
+		<item type="folder" name="storyBoard"/>
+	</item>
+</episode>

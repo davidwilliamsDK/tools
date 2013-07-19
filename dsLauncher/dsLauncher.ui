@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>819</width>
+    <height>341</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QComboBox" name="projectCB">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>171</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="episodeCB">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="seqLV">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>111</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::SingleSelection</enum>
+    </property>
+   </widget>
+   <widget class="QListWidget" name="shotLV">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>50</y>
+      <width>91</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="selectionMode">
+     <enum>QAbstractItemView::MultiSelection</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="maya_PB">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>50</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>maya</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="nuke_PB">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>130</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>nuke</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="photoshop_PB">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>220</y>
+      <width>91</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>photoshop</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="nuke_CB">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>20</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>show Nuke</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="maya_CB">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>81</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>show Maya</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="fileTW">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>50</y>
+      <width>481</width>
+      <height>251</height>
+     </rect>
+    </property>
+    <property name="headerHidden">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>items</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>819</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>nukeTools</string>
+    </property>
+    <addaction name="actionUpdateRL"/>
+    <addaction name="actionResubmitUp"/>
+    <addaction name="actionHistoryRL"/>
+    <addaction name="actionBackUp"/>
+   </widget>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="action_SA"/>
+    <addaction name="action_SL"/>
+    <addaction name="action_SC"/>
+   </widget>
+   <widget class="QMenu" name="menuMayaTools">
+    <property name="title">
+     <string>mayaTools</string>
+    </property>
+    <addaction name="actionResubmit"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuTools"/>
+   <addaction name="menuMayaTools"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDev">
+   <property name="text">
+    <string>dev</string>
+   </property>
+   <property name="toolTip">
+    <string>launch with dev env</string>
+   </property>
+  </action>
+  <action name="actionNukeX">
+   <property name="text">
+    <string>nukeX</string>
+   </property>
+   <property name="toolTip">
+    <string>launch NukeX</string>
+   </property>
+  </action>
+  <action name="actionUpdateRL">
+   <property name="text">
+    <string>updateRL</string>
+   </property>
+  </action>
+  <action name="actionResubmitUp">
+   <property name="text">
+    <string>resubmitUp</string>
+   </property>
+  </action>
+  <action name="actionHistoryRL">
+   <property name="text">
+    <string>historyRL</string>
+   </property>
+  </action>
+  <action name="actionBackUp">
+   <property name="text">
+    <string>backUp</string>
+   </property>
+  </action>
+  <action name="action_SA">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Al</string>
+   </property>
+  </action>
+  <action name="action_SL">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Lego</string>
+   </property>
+  </action>
+  <action name="action_SC">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Show Commercial</string>
+   </property>
+  </action>
+  <action name="actionResubmit">
+   <property name="text">
+    <string>resubmitUp</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>nuke_CB</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>maya_CB</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>412</x>
+     <y>46</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>492</x>
+     <y>45</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>maya_CB</sender>
+   <signal>clicked(bool)</signal>
+   <receiver>nuke_CB</receiver>
+   <slot>toggle()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>523</x>
+     <y>43</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>51</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

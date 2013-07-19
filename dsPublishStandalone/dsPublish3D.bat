@@ -1,0 +1,1 @@
+start python \\vfx-data-server\dsGlobal\dsCore\tools\dsPublishStandalone\dsPublish3D.py

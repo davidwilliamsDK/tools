@@ -1,0 +1,1 @@
+cmd /K C:\Python26\python.exe \\vfx-data-server\dsDev\dsCore\tools\dsLauncher\dsLauncher.py

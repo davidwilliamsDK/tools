@@ -1,0 +1,6 @@
+<project>
+	<item type="folder" name="asset"/>
+	<item type="folder" name="film"/>
+	<item type="folder" name="preProduction"/>
+	<item type="folder" name="temp"/>
+</project>

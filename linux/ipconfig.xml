@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<root>
+  <Rp12 IPADDR="192.168.0.186">
+    <device HWADDR="00:1E:67:06:A5:34"/>
+    <device HWADDR="00:1E:67:06:A5:35"/>
+  </Rp12>
+</root>
